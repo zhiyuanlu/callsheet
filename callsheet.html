@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CALL SHEET</title>
+<style>
+#sheetHeader {
+	clear:both;
+	background-color:coral;
+    border: 3px solid #8AC007;
+}
+#agentsListControlPanel {
+	float:right;
+    border: 3px solid blue;
+}
+#callSheetSwitchPanel {
+	float:left;
+    border: 3px solid red;
+}
+#callSheetTable {
+	clear:left;
+	float:left;
+	overflow:scroll;
+	width:950px;
+	height:400px;
+    border: 3px solid #8AC007;
+}
+#SubmitPanel {
+	clear:right;
+	float:right;
+	width:270px;
+    border: 3px solid #8AC007;
+	
+}
+</style>
+</head>
+
+<body>
+
+<div id="sheetHeader">
+<h2>CALL SHEET</h2>
+</div>
+
+<div id="agentsListControlPanel">
+<input type="text" name="AgentName" value="AgentName">
+<button type="button">Add Agent</button>
+<button type="button">Drop Agent</button>
+</div>
+
+
+<div id="callSheetSwitchPanel">
+<button type="button">Summary</button>
+<select name="AgentsList">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+<button type="button">All</button><br>
+</div>
+
+<div id="callSheetTable">
+ <div id="innerDiv">
+	<div id="person_head_wrap">
+	<table id="callTable" class="tb">
+    <thead>
+        <tr>
+            <th>Loan Number</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>E-Mail</th>
+            <th>State</th>
+			<th>Due Date</th>
+			<th>Time Stamp</th>
+			<th>Contacted Method</th>
+			<th>Status</th>
+			<th>Username</th>
+			<th>Attempts</th>
+        </tr>
+    </thead>
+	</div>
+	
+	<div id="person_body_wrap">
+    <tbody>
+       <tr>
+            <td class="lnumber">0</td>
+            <td class="fname">Tim</td>
+            <td class="lname">Brown</td>
+            <td class="email">sdf@mail.com</td>
+            <td class="state">OH</td>
+			<th class="ddate">0/00/0000</th>
+			<th class="tstamp">0/00/0000</th>
+			<th class="cmethod">called home</th>
+			<th class="status">unkknown</th>
+			<th class="username">who?</th>
+			<th class="attempts">0</th>
+        </tr>
+        <!-- Additional rows removed for brevity. -->
+    </tbody>
+	</table>
+	</div>
+</div>
+
+</div>
+
+
+<div id="SubmitPanel">
+<h4>Call Sheet Submission Form</h4>
+<form>
+<center><h4>Loan Number</h4>
+<input type="text" name="AgentName" value="AgentName"><br>
+<h4>Have you renewed this customer and sent them their loan document?</h4>
+<select name="SignedList">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+<h4>Contact Method</h4>
+<select name="ContactMethodList">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+<h4>Status</h4>
+<select name="StatusList">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+<br>
+<button type="button">Sumbit</button>
+</center>
+</form>
+
+</div>
+</body>
+</html>
